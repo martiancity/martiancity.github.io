@@ -31,12 +31,55 @@
         </center>
     </header>
 
-    <div class="container-100">
+    <div class="container-fluid">
         <div class="row">
-            <center class="col-sm-12">
+            <center class="col-sm-12" style="height: 90vh;">
                 <img class="img-fluid" src="static/images/mars.png" alt="mars">
             </center>
         </div>
+
+        <div class="content">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="content">
+                    <div class="content-title">
+                        <img src="https://images.unsplash.com/photo-1573588028698-f4759befb09a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80"
+                            class="img-fluid" alt="man">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="content">
+                    <div class="content-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, laborum?
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto suscipit, dolores inventore sed repellendus optio amet vero dolorem corporis voluptates nostrum voluptatum? Expedita nobis corrupti magnam quaerat suscipit assumenda eius dignissimos quidem nemo cum dolorem praesentium pariatur, blanditiis debitis dolor iusto, fuga et soluta culpa accusantium aut. Expedita, placeat labore.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="content">
+                    <div class="content-title">
+                        <img src="https://images.unsplash.com/photo-1547234935-80c7145ec969?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"
+                            class="img-fluid" alt="man">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="content">
+                    <div class="content-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, laborum?
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto suscipit, dolores inventore sed repellendus optio amet vero dolorem corporis voluptates nostrum voluptatum? Expedita nobis corrupti magnam quaerat suscipit assumenda eius dignissimos quidem nemo cum dolorem praesentium pariatur, blanditiis debitis dolor iusto, fuga et soluta culpa accusantium aut. Expedita, placeat labore.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div onclick="return openmenu()" class="floatingMenuBtn btn bg-dark text-light">
@@ -46,13 +89,13 @@
     <div id="menuwrap" class="menuwrap">
 
         <div id="menu" class="right-menu">
-           <div class="content">
-               <div class="content-title">
-                   <a href="./"><i class="fa fa-home"></i> Home</a>
-               </div>
-           </div>
+            <div class="content">
+                <div class="content-title">
+                    <a href="./"><i class="fa fa-home"></i> Home</a>
+                </div>
+            </div>
         </div>
-        <div onclick="return closemenu()" class="floatingMenuBtn btn bg-dark text-light">
+        <div onclick="return closemenu()" class="floatingMenuBtn btn bg-danger text-light">
             <i class="fa fa-times"></i> Close
         </div>
 
@@ -65,13 +108,13 @@
     var wrap = document.getElementById("menuwrap");
     var menu = document.getElementById("menu");
 
-    function openmenu(){
+    function openmenu() {
         wrap.style.display = "block";
-        menu.style.animation= "menuanimin 0.5s 1";
+        menu.style.animation = "menuanimin 0.5s 1";
     }
 
-    function closemenu(){
-        menu.style.animation= "menuanimout 0.5s 1";
+    function closemenu() {
+        menu.style.animation = "menuanimout 0.5s 1";
         wrap.style.display = "none";
     }
 </script>
