@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 body{
     background: black;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    font-family: 'Bungee', cursive;
 }
