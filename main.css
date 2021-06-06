@@ -49,6 +49,7 @@ header{
     position: fixed;
     top: 0;
     display: none;
+    z-index: 100;
 }
 
 .right-menu{

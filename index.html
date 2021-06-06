@@ -23,7 +23,7 @@
 
 </head>
 
-<body id="body" class="with-custom-webkit-scrollbars with-custom-css-scrollbars" style="background: url('https://images.unsplash.com/photo-1610505466122-b1d9482901ef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80'); background-size: contain;">
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" style="background: url('https://images.unsplash.com/photo-1530362502708-d02c8f093039?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80'); background-size: contain;">
 
     <header class="content">
         <center class="content-title">
@@ -112,7 +112,7 @@
     </div>
 
     <div onclick="return openmenu()" class="floatingMenuBtn btn bg-dark text-light">
-        <i class="fa fa-bars"></i> Menu
+        <i class="fa fa-bars"></i>
     </div>
 
     <div id="menuwrap" class="menuwrap">
@@ -125,7 +125,7 @@
             </div>
         </div>
         <div onclick="return closemenu()" class="floatingMenuBtn btn bg-danger text-light">
-            <i class="fa fa-times"></i> Close
+            <i class="fa fa-times"></i>
         </div>
 
     </div>
@@ -143,18 +143,15 @@
 <script>
     var wrap = document.getElementById("menuwrap");
     var menu = document.getElementById("menu");
-    var body = document.getElementById("body")
 
     function openmenu() {
         wrap.style.display = "block";
         menu.style.animation = "menuanimin 0.5s 1";
-        body.style.overflow = "hidden"
     }
 
     function closemenu() {
         menu.style.animation = "menuanimout 0.5s 1";
         wrap.style.display = "none";
-        body.style.overflow = "visible"
     }
 </script>
 
