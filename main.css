@@ -22,6 +22,20 @@ font-family: 'Volkhov', serif;
     to {right: -250px;}
 }
 
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    border: 2px solid black;  /* creates padding around scroll thumb */
+}
+
 body{
     background: black;
     color: white;
