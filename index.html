@@ -15,6 +15,9 @@
     <!-- Halfmoon CSS -->
     <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
 
+    <!-- FontAwesomne -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="main.css">
 
@@ -36,7 +39,41 @@
         </div>
     </div>
 
+    <div onclick="return openmenu()" class="floatingMenuBtn btn bg-dark text-light">
+        <i class="fa fa-bars"></i> Menu
+    </div>
+
+    <div id="menuwrap" class="menuwrap">
+
+        <div id="menu" class="right-menu">
+           <div class="content">
+               <div class="content-title">
+                   <a href="./"><i class="fa fa-home"></i> Home</a>
+               </div>
+           </div>
+        </div>
+        <div onclick="return closemenu()" class="floatingMenuBtn btn bg-dark text-light">
+            <i class="fa fa-times"></i> Close
+        </div>
+
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
 </body>
+
+<script>
+    var wrap = document.getElementById("menuwrap");
+    var menu = document.getElementById("menu");
+
+    function openmenu(){
+        wrap.style.display = "block";
+        menu.style.animation= "menuanimin 0.5s 1";
+    }
+
+    function closemenu(){
+        menu.style.animation= "menuanimout 0.5s 1";
+        wrap.style.display = "none";
+    }
+</script>
 
 </html>
