@@ -1,4 +1,16 @@
+/* Header gfonts */
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+/*
+font-family: 'Bungee', cursive;
+*/
+
+/* Body gfonts */
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Patua+One&family=Volkhov&display=swap');
+/*
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Volkhov', serif;
+*/
 
 @keyframes menuanimin {
     from {right: -250px;}
@@ -20,13 +32,14 @@ a{
 }
 
 header{
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', cursive !important;
 }
 
 .floatingMenuBtn{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    top: 0px;
+    right: 0px;
+    border-radius: 0px 0px 0px 4px;
 }
 
 .menuwrap{
