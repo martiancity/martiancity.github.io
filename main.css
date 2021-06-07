@@ -54,7 +54,7 @@ header{
 }
 
 .mars{
-    background: url('http://planetpixelemporium.com/download/download.php?mars_1k_color.jpg');
+    background: url('./static/images/mars_1k_color.jpg');
     background-size: cover;
     box-shadow: -20px -20px 50px 20px #000 inset, 0 0 20px 2px #000;
     animation: spin 30s linear alternate infinite;
