@@ -22,6 +22,10 @@ font-family: 'Volkhov', serif;
     to {right: -250px;}
 }
 
+@keyframes spin{
+    100% { background-position: 100%; }
+}
+
 body::-webkit-scrollbar {
     width: 10px;               /* width of the entire scrollbar */
 }
@@ -47,6 +51,21 @@ a{
 
 header{
     font-family: 'Bungee', cursive !important;
+}
+
+.mars{
+    background: url('http://planetpixelemporium.com/download/download.php?mars_1k_color.jpg');
+    background-size: cover;
+    box-shadow: -20px -20px 50px 20px #000 inset, 0 0 20px 2px #000;
+    animation: spin 30s linear alternate infinite;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
 }
 
 .floatingMenuBtn{
