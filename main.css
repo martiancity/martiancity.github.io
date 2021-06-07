@@ -6,10 +6,12 @@ font-family: 'Bungee', cursive;
 
 /* Body gfonts */
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Patua+One&family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 /*
 font-family: 'Hammersmith One', sans-serif;
 font-family: 'Patua One', cursive;
 font-family: 'Volkhov', serif;
+font-family: 'Baloo Tammudu 2', cursive;
 */
 
 @keyframes menuanimin {
@@ -47,6 +49,7 @@ body::-webkit-scrollbar-thumb {
 body{
     background: black;
     color: white;
+    font-family: 'Baloo Tammudu 2', cursive;
 }
 
 #loading{
