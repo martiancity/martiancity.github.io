@@ -26,6 +26,10 @@ font-family: 'Volkhov', serif;
     100% { background-position: 100%; }
 }
 
+@keyframes spinner{
+    100%{ transform: rotate(360deg); }
+}
+
 body::-webkit-scrollbar {
     width: 10px;               /* width of the entire scrollbar */
 }
@@ -45,6 +49,24 @@ body{
     color: white;
 }
 
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 999;
+}
+
+.spinner{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 2em;
+    animation: spinner 3s linear infinite;
+}
+
 a{
     color: white;
 }
@@ -58,8 +80,8 @@ header{
     background-size: cover;
     box-shadow: -20px -20px 50px 20px #000 inset, 0 0 20px 2px #000;
     animation: spin 30s linear alternate infinite;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: relative;
     top: 0;
     right: 0;
