@@ -1,18 +1,15 @@
-/* Header gfonts */
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-/*
-font-family: 'Bungee', cursive;
-*/
+@font-face {
+    font-family: bodyfont;
+    src: url('./static/fonts/body/HKGrotesk-Light.otf');
+}
 
-/* Body gfonts */
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Patua+One&family=Volkhov&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
-/*
-font-family: 'Hammersmith One', sans-serif;
-font-family: 'Patua One', cursive;
-font-family: 'Volkhov', serif;
-font-family: 'Baloo Tammudu 2', cursive;
-*/
+@font-face {
+    font-family: headingsfont;
+    src: url('./static/fonts/headings/Louis\ George\ Cafe.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+/* font-family: 'Rochester', cursive; */
 
 @keyframes menuanimin {
     from {right: -250px;}
@@ -24,7 +21,7 @@ font-family: 'Baloo Tammudu 2', cursive;
     to {right: -250px;}
 }
 
-@keyframes spin{
+@keyframes marsspin{
     100% { background-position: 100%; }
 }
 
@@ -49,7 +46,11 @@ body::-webkit-scrollbar-thumb {
 body{
     background: black;
     color: white;
-    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: bodyfont;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: headingsfont;
 }
 
 #loading{
@@ -64,10 +65,13 @@ body{
 
 .spinner{
     position: fixed;
-    top: 50%;
-    left: 50%;
-    font-size: 2em;
+    top: 50vmin;
+    left: 50vmax;
+    margin: auto;
+
+    font-size: 4em;
     animation: spinner 3s linear infinite;
+    /* background-color: red; */
 }
 
 a{
@@ -75,14 +79,14 @@ a{
 }
 
 header{
-    font-family: 'Bungee', cursive !important;
+    font-family: 'Rochester', cursive !important;
 }
 
 .mars{
     background: url('./static/images/mars_1k_color.jpg');
     background-size: cover;
     box-shadow: -20px -20px 50px 20px #000 inset, 0 0 20px 2px #000;
-    animation: spin 30s linear alternate infinite;
+    animation: marsspin 30s linear infinite;
     width: 450px;
     height: 450px;
     position: relative;
