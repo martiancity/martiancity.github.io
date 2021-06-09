@@ -86,7 +86,7 @@ header{
     background: url('./static/images/mars_1k_color.jpg');
     background-size: cover;
     box-shadow: -20px -20px 50px 20px #000 inset, 0 0 20px 2px #000;
-    animation: marsspin 30s linear infinite;
+    animation: marsspin 30s linear alternate infinite;
     width: 450px;
     height: 450px;
     position: relative;
