@@ -32,7 +32,7 @@
     <div class="content">
         <img src="./static/images/logo.png" style="width: 200px;" alt="logo" class="img-fluid">
     </div>
-    
+
     <br><br>
 
     <div class="container">
@@ -219,47 +219,46 @@
 
     </div>
 
-    <div onclick="return openmenu()" class="floatingMenuBtn btn bg-dark text-light">
+    <div onclick="return openmenu()" class="floatingMenuBtn btn bg-dark text-success">
         <i class="fa fa-info"></i>
     </div>
 
-    <div id="menuwrap" class="menuwrap">
-
-        <div id="menu" class="right-menu">
-            <div class="content">
-                <div class="content-title">
-                    <b>Project Based Learning 2021</b>
-                </div><br>
-                <div class="content-title">
-                    <b>Instructor</b>
-                </div><br>
-                <ul>
-                    <li>Prof. S. G. Dhake</li>
-                </ul>
-                <br>
-
-                <div class="content-title">
-                    <b>Members</b>
-                </div><br>
-                <ul>
-                    <li>077 Sujata Khatale</li>
-                    <li>081 Neeraj Adhav</li>
-                    <li>088 Prajwal Daware</li>
-                    <li>090 Sanket Shivale</li>
-                    <li>091 Nikita Argade</li>
-                    <li>094 Dixita Pagar</li>
-                </ul>
-                <br>
-
-                <div class="content-title">
-                    <b>College</b>
-                </div><br>
-                Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213
-                <br>
-            </div>
-        </div>
+    <div onclick="return closemenu()" id="menuwrap" class="menuwrap">
+    </div>
+    <div id="menu" class="right-menu">
         <div onclick="return closemenu()" class="floatingMenuBtn btn bg-dark text-danger">
             <i class="fa fa-times"></i>
+        </div>
+        <div class="content">
+            <div class="content-title">
+                <b>Project Based Learning 2021</b>
+            </div><br>
+            <div class="content-title">
+                <b>Instructor</b>
+            </div><br>
+            <ul>
+                <li>Prof. S. G. Dhake</li>
+            </ul>
+            <br>
+
+            <div class="content-title">
+                <b>Members</b>
+            </div><br>
+            <ul>
+                <li>077 Sujata Khatale</li>
+                <li>081 Neeraj Adhav</li>
+                <li>088 Prajwal Daware</li>
+                <li>090 Sanket Shivale</li>
+                <li>091 Nikita Argade</li>
+                <li>094 Dixita Pagar</li>
+            </ul>
+            <br>
+
+            <div class="content-title">
+                <b>College</b>
+            </div><br>
+            Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213
+            <br>
         </div>
 
     </div>
@@ -283,12 +282,14 @@
 
     function openmenu() {
         wrap.style.display = "block";
+        menu.style.display = "block";
         menu.style.animation = "menuanimin 0.5s 1";
     }
 
     function closemenu() {
         menu.style.animation = "menuanimout 0.5s 1";
         wrap.style.display = "none";
+        menu.style.display = "none";
     }
 
     function preloader() {
