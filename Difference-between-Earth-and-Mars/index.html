@@ -1,134 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.83.1">
+  <title>Difference between Earth and Mars</title>
 
-    <!-- Favicon and title -->
-    <link rel="icon" href="../static/images/mars.png">
-    <title>Martian City</title>
+    <link rel="canonical" href="https://neerajadhav.github.io">
 
-    <!-- Halfmoon CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="../blog.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <!-- FontAwesomne -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../main.css">
     <style>
-        .content p{
-            font-size: 20px;
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
+      }
     </style>
 
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
 </head>
 
-<body onload="preloader()" class="with-custom-webkit-scrollbars with-custom-css-scrollbars"
-    style="background: url('https://images.unsplash.com/photo-1530362502708-d02c8f093039?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80'); background-size: contain; background-color: black;">
-    <div id="loading">
-        <!-- <i class="spinner fa fa-lg fa-sun-o"></i> -->
-    </div>
-
-    <div class="content">
-        <img src="../static/images/logo.png" style="width: 200px;" alt="logo" class="img-fluid">
-    </div>
-
-    <div class="container">
-        <div class="content">
-            <a href="../#1"><button class="btn bg-dark text-danger"><i class="fa fa-arrow-left"></i></button></a>
-        </div>
-        <div class="content">
-            <div class="content-title">
-               <h1>Difference between Earth and Mars</h1>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in eum eaque vero voluptas dolor dolore qui iste explicabo placeat esse eveniet, tenetur facilis nulla sint? Harum quod saepe illum cum perferendis tempora assumenda repellat vero blanditiis reiciendis labore repellendus, dolor neque voluptate ducimus, natus, maxime error sequi quaerat doloremque.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, nam vel, explicabo deleniti fugit minus corporis, quae aperiam qui obcaecati dolores quidem vero reprehenderit iure labore assumenda consequatur reiciendis earum. Itaque repellat facere obcaecati vitae culpa id blanditiis? Quibusdam molestiae impedit rem laborum laboriosam quod ut quidem cumque nostrum molestias odio magnam libero, tempora quasi autem ipsum. Deleniti voluptas architecto officia. Quis ducimus voluptas cum, consequatur nobis ratione soluta similique itaque aliquid magni labore, ea culpa perspiciatis, veniam dolorum amet non. Deserunt officiis ab velit sit pariatur. Molestias, voluptatem reprehenderit impedit iusto consequatur ea quos? Odio perspiciatis ut optio expedita.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit culpa, rem laboriosam, quod molestiae possimus architecto eveniet ad magnam nemo quia, quis ea vel? Temporibus accusantium dolorum quisquam vitae impedit! Dolorem, debitis, deserunt repellat temporibus porro excepturi sunt in dolor molestias esse distinctio numquam quas ab. Odio distinctio quisquam commodi.</p>
-        </div>
-        <br><br>
-    </div>
-    <div onclick="return openmenu()" class="floatingMenuBtn btn bg-dark text-success">
-        <i class="fa fa-info"></i>
-    </div>
-
-    <div onclick="return closemenu()" id="menuwrap" class="menuwrap">
-    </div>
-    <div id="menu" class="right-menu">
-        <div onclick="return closemenu()" class="floatingMenuBtn btn bg-dark text-danger">
-            <i class="fa fa-times"></i>
-        </div>
-        <div class="content">
-            <div class="content-title">
-                <b>Project Based Learning 2021</b>
-            </div><br>
-            <div class="content-title">
+<body>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Project Based Learning 2021</h4>
+            <div class="text-white">
+              <div>
+              </div><br>
+              <div>
                 <b>Instructor</b>
-            </div><br>
-            <ul>
+              </div>
+              <ul>
                 <li>Prof. S. G. Dhake</li>
-            </ul>
-            <br>
+              </ul>
+              <br>
 
-            <div class="content-title">
+              <div>
                 <b>Members</b>
-            </div><br>
-            <ul>
+              </div>
+              <ul>
                 <li>077 Sujata Khatale</li>
                 <li>081 Neeraj Adhav</li>
                 <li>088 Prajwal Daware</li>
                 <li>090 Sanket Shivale</li>
                 <li>091 Nikita Argade</li>
                 <li>094 Dixita Pagar</li>
-            </ul>
-            <br>
-
-            <div class="content-title">
-                <b>College</b>
-            </div><br>
-            Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213
-            <br>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">College</h4>
+            <p class="text-white">Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213</p>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="../" class="navbar-brand d-flex align-items-center">
+          <strong>Martian City</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
+  <main class="container">
+    <br>
+    <div class="row g-5">
+      <div class="col-md-8">
+        <a href="../#post1">Back</a>
+        <hr>
+        <article class="blog-post">
+          <h2 class="blog-post-title">Difference between Earth and Mars</h2>
+          <p class="blog-post-meta">by Sujata Khatale</p>
+
+          <p>We are planning to migrate to a different planet, but we don't know how the Planet is
+            different from ours. Let us find out the differences between our lovely planet earth and our
+            next home Mars.</p>
+          <hr>
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and
+            show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the
+            demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          <h2>Blockquotes</h2>
+          <p>This is an example blockquote in action:</p>
+          <blockquote class="blockquote">
+            <p>Quoted text goes here.</p>
+          </blockquote>
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and
+            show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the
+            demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          <h3>Example lists</h3>
+          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly
+            repetitive body text used throughout. This is an example unordered list:</p>
+          <ul>
+            <li>First list item</li>
+            <li>Second list item with a longer description</li>
+            <li>Third list item to close it out</li>
+          </ul>
+          <p>And this is an ordered list:</p>
+          <ol>
+            <li>First list item</li>
+            <li>Second list item with a longer description</li>
+            <li>Third list item to close it out</li>
+          </ol>
+          <p>And this is a definiton list:</p>
+          <dl>
+            <dt>HyperText Markup Language (HTML)</dt>
+            <dd>The language used to describe and define the content of a Web page</dd>
+            <dt>Cascading Style Sheets (CSS)</dt>
+            <dd>Used to describe the appearance of Web content</dd>
+            <dt>JavaScript (JS)</dt>
+            <dd>The programming language used to build advanced Web sites and applications</dd>
+          </dl>
+          <h2>Inline HTML elements</h2>
+          <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+          <ul>
+            <li><strong>To bold text</strong>, use <code
+                class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+            <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.
+            </li>
+            <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code
+                class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code
+                class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+            <li>Citations, like <cite>— Mark Otto</cite>, should use <code
+                class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+            <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code>
+              and <ins>inserted</ins> text should use <code
+                class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+            <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code>
+              and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.
+            </li>
+          </ul>
+          <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+          <h2>Heading</h2>
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and
+            show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the
+            demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          <h3>Sub-heading</h3>
+          <p>This is some additional paragraph placeholder content. It has been written to fill the available space and
+            show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the
+            demonstration flowing, so be on the lookout for this exact same string of text.</p>
+          <pre><code>Example code block</code></pre>
+          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly
+            repetitive body text used throughout.</p>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4>Project Based Learning 2021</h4>
+            <div>
+              <div>
+              </div><br>
+              <div>
+                <b>Instructor</b>
+              </div>
+              <ul>
+                <li>Prof. S. G. Dhake</li>
+              </ul>
+              <br>
+
+              <div>
+                <b>Members</b>
+              </div>
+              <ul>
+                <li>077 Sujata Khatale</li>
+                <li>081 Neeraj Adhav</li>
+                <li>088 Prajwal Daware</li>
+                <li>090 Sanket Shivale</li>
+                <li>091 Nikita Argade</li>
+                <li>094 Dixita Pagar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- <hr style="background: gray; height: 2px;">
-    <footer class="content">
-        <div class="content-title">
-            copyright
-        </div>
-    </footer> -->
+  </main>
 
-    <br><br><br><br>
-    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+  <footer class="blog-footer">
+    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
+        href="https://twitter.com/mdo">@mdo</a>.</p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  crossorigin="anonymous"></script>
 </body>
-
-<script>
-    var wrap = document.getElementById("menuwrap");
-    var menu = document.getElementById("menu");
-
-    function openmenu() {
-        wrap.style.display = "block";
-        menu.style.display = "block";
-        menu.style.animation = "menuanimin 0.5s 1";
-    }
-
-    function closemenu() {
-        menu.style.animation = "menuanimout 0.5s 1";
-        wrap.style.display = "none";
-        menu.style.display = "none";
-    }
-
-    function preloader() {
-        loading = document.getElementById("loading")
-        loading.style.display = 'none';
-    }
-</script>
 
 </html>
