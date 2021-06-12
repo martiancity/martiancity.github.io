@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Favicon and title -->
+    <link rel="icon" href="../static/images/mars.png">
+    <title>Energy Resources</title>
+
+    <!-- Halfmoon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+
+    <!-- FontAwesomne -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .content p{
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body onload="preloader()" class="with-custom-webkit-scrollbars with-custom-css-scrollbars"
+    style="background: url('https://images.unsplash.com/photo-1530362502708-d02c8f093039?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80'); background-size: contain; background-color: black;">
+    <div id="loading">
+        <!-- <i class="spinner fa fa-lg fa-sun-o"></i> -->
+    </div>
+
+    <div class="content">
+        <img src="../static/images/logo.png" style="width: 200px;" alt="logo" class="img-fluid">
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <a href="../#1"><button class="btn bg-dark text-danger"><i class="fa fa-arrow-left"></i></button></a>
+        </div>
+        <div class="content">
+            <div class="content-title">
+               <h1>Energy resources</h1>
+            </div>
+            <p>To the date two energy resources utilized for mars mission have been sunlight and radioactive decay. A manned mission or permananat settlement would likely also have to choose between these two.</p>
+            <h2>Useful resources on Mars</h2>
+            <p>Spacecraft exploration of Mars has shown that the essential resources neccessary for a life support are present on the Martian surface. The key life support compounds O<sub>2</sub>, N<sub>2</sub>, H<sub>2</sub>O are available on Mars. The soil could be used as radiation sheilding and could provide many useful industrial and contruction material.</p>
+        </div>
+        <br><br>
+    </div>
+    <div onclick="return openmenu()" class="floatingMenuBtn btn bg-dark text-success">
+        <i class="fa fa-info"></i>
+    </div>
+
+    <div onclick="return closemenu()" id="menuwrap" class="menuwrap">
+    </div>
+    <div id="menu" class="right-menu">
+        <div onclick="return closemenu()" class="floatingMenuBtn btn bg-dark text-danger">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="content">
+            <div class="content-title">
+                <b>Project Based Learning 2021</b>
+            </div><br>
+            <div class="content-title">
+                <b>Instructor</b>
+            </div><br>
+            <ul>
+                <li>Prof. S. G. Dhake</li>
+            </ul>
+            <br>
+
+            <div class="content-title">
+                <b>Members</b>
+            </div><br>
+            <ul>
+                <li>077 Sujata Khatale</li>
+                <li>081 Neeraj Adhav</li>
+                <li>088 Prajwal Daware</li>
+                <li>090 Sanket Shivale</li>
+                <li>091 Nikita Argade</li>
+                <li>094 Dixita Pagar</li>
+            </ul>
+            <br>
+
+            <div class="content-title">
+                <b>College</b>
+            </div><br>
+            Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213
+            <br>
+        </div>
+
+    </div>
+
+    <!-- <hr style="background: gray; height: 2px;">
+    <footer class="content">
+        <div class="content-title">
+            copyright
+        </div>
+    </footer> -->
+
+    <br><br><br><br>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+
+
+</body>
+
+<script>
+    var wrap = document.getElementById("menuwrap");
+    var menu = document.getElementById("menu");
+
+    function openmenu() {
+        wrap.style.display = "block";
+        menu.style.display = "block";
+        menu.style.animation = "menuanimin 0.5s 1";
+    }
+
+    function closemenu() {
+        menu.style.animation = "menuanimout 0.5s 1";
+        wrap.style.display = "none";
+        menu.style.display = "none";
+    }
+
+    function preloader() {
+        loading = document.getElementById("loading")
+        loading.style.display = 'none';
+    }
+</script>
+
+</html>
