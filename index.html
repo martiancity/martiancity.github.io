@@ -1,311 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.83.1">
+  <title>Album example · Bootstrap v5.0</title>
 
-    <!-- Favicon and title -->
-    <link rel="icon" href="static/images/mars.png">
-    <title>Martian City</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
-    <!-- Halfmoon CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
 
-    <!-- FontAwesomne -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="main.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
 
 </head>
 
-<body onload="preloader()" class="with-custom-webkit-scrollbars with-custom-css-scrollbars"
-    style="background: url('https://images.unsplash.com/photo-1530362502708-d02c8f093039?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80'); background-size: contain; background-color: black;">
-    <div id="loading">
-        <!-- <i class="spinner fa fa-lg fa-sun-o"></i> -->
-    </div>
+<body>
 
-    <div class="content">
-        <img src="./static/images/logo.png" style="width: 200px;" alt="logo" class="img-fluid">
-    </div>
-
-    <br><br>
-
-    <div class="container">
-
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12">
-                <div class="mars"></div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        <br><br>
-                        <h3>
-                            <center><i>"</i> Mars is the next tangible frontier for human exploration, and it is an
-                                achievable goal<i> "</i></center>
-                        </h3>
-                        <p class="text-right">- <i>Nasa</i> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br>
-
-        <div class="content">
-            <div class="content-title">
-                <p>Colonization of Mars: As humans gradually overcome technological challenges of deep space
-                    missions, the possibility of exploration and colonization of extraterrestrial outposts is being
-                    seriously considered by space agencies and commercial entities alike.</p>
-                <p>Colonization on mars is a very deep topic, we have to take many things under consideration. Let
-                    us see the different challenges which we will have to face.</p>
-            </div>
-        </div>
-        <br><br>
-
-
-        <center>
-            <video class="img-fluid rounded" width="90%" height="auto" loop="loop" autoplay="autoplay">
-                <source type="video/mp4" src="https://www.spacex.com/media/ISS-Docking_Simulation-15sec-03-web.mp4">
-                <source type="video/webm" src="https://www.spacex.com/media/ISS-Docking_Simulation-15sec-03-webm.webm">
-                Your browser does not support the video tag.
-            </video>
-        </center>
-        
-
-        <br><br>
-
-        <div class="row" id="1">
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        <img src="http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2018/04/comparing_the_atmospheres_of_mars_and_earth/17444033-1-eng-GB/Comparing_the_atmospheres_of_Mars_and_Earth_pillars.jpg"
-                            class="img-fluid rounded" alt="man">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        Difference between Earth and Mars
-                    </div>
-                    <small class="text-right">Sujata Khatale</small><br>
-                    <p>
-                        We are planning to migrate to a different planet, but we don't know how the Planet is
-                        different from ours. Let us find out the differences between our lovely planet earth and our
-                        next home Mars.
-                    </p>
-                    <a href="./Difference-between-Earth-and-Mars/"><button class="btn btn-primary">Open</button></a>
-                    <br>
-                </div>
-            </div>
-        </div><br>
-
-        <div class="row" id="2">
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        <img src="https://mars.nasa.gov/imgs/2017/02/Mars-2020-Final-Three-Landing-Sites-loop_v001_640x360.gif"
-                            class="img-fluid rounded" alt="mars gif">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        Picking a Landing Site
-                    </div><small class="text-right">Neeraj Adhav</small><br>
-                    <p>Before starting our journey, we should know our destination right! So here are some suitable
-                        places on mars which we can think of landing on.</p>
-                    <button class="btn btn-primary">Open</button>
-                    <br>
-                </div>
-            </div>
-        </div><br>
-
-        <div class="row" id="3">
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/journey_to_mars.jpeg"
-                            class="img-fluid rounded" alt="man">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        Travelling to mars
-                    </div><small class="text-right">Prajwal Daware</small><br>
-                    <p>
-                        Now, as we know where to go, we can plan our travel vehicle and the routes. Here is some
-                        detailed info about the same.
-                    </p>
-                    <button class="btn btn-primary">Open</button>
-                    <br>
-                </div>
-            </div>
-        </div><br>
-
-        <div class="row" id="4">
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        <img src="https://images.unsplash.com/photo-1502637098811-fa9526d2b659"
-                            class="img-fluid rounded" alt="man">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        Energy resources
-                    </div><small class="text-right">Dixita Pagar</small><br>
-                    <p>
-                        Hey, stop! We have to think, how will we operate our space station on the surface of mars?
-                        What energy resource we will use? What will provide our rovers and machinery power? Let us
-                        see one by one.
-                    </p>
-                    <a href="./Energy-resources/"><button class="btn btn-primary">Open</button></a>
-                    <br>
-                </div>
-            </div>
-        </div><br>
-
-        <div class="row" id="5">
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        <img src="https://cdn.thomasnet.com/insights-images/875ca5b3-7ecc-466c-855b-110b6ce8c53b/750px.png"
-                            class="img-fluid rounded" alt="man">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        Infrastructure and Laboratories
-                    </div><small class="text-right">Sanket Shivale</small><br>
-                    <p>
-                        Okay, let's assume we are finally on mars. Now, what will be our next step? What are we
-                        going to build? Where will we dwell? where will we carry out our research? What kind of
-                        scientific departments are we going to set up? Read to find out.
-                    </p>
-                    <button class="btn btn-primary">Open</button>
-                    <br>
-                </div>
-            </div>
-        </div><br>
-
-        <div class="row" id="6">
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        <img src="https://cdn.mos.cms.futurecdn.net/ET4h86HNJS7aHCKHmz3TgB-1200-80.jpg"
-                            class="img-fluid rounded" alt="man">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="content">
-                    <div class="content-title">
-                        Map of our Martian City
-                    </div><small class="text-right">Nikita Argade</small><br>
-                    <p>
-                        We are on Mars, with a team of scientists, engineers and doctors. Now all prerequisites are
-                        fulfilled, let us see how our city will look. Let's jump into it.
-                    </p>
-                    <button class="btn btn-primary">Open</button>
-                    <br>
-                </div>
-            </div>
-        </div><br>
-
-        <br>
-
-    </div>
-
-    <div onclick="return openmenu()" class="floatingMenuBtn btn bg-dark text-success">
-        <i class="fa fa-info"></i>
-    </div>
-
-    <div onclick="return closemenu()" id="menuwrap" class="menuwrap">
-    </div>
-    <div id="menu" class="right-menu">
-        <div onclick="return closemenu()" class="floatingMenuBtn btn bg-dark text-danger">
-            <i class="fa fa-times"></i>
-        </div>
-        <div class="content">
-            <div class="content-title">
-                <b>Project Based Learning 2021</b>
-            </div><br>
-            <div class="content-title">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Project Based Learning 2021</h4>
+            <div class="text-white">
+              <div>
+              </div><br>
+              <div>
                 <b>Instructor</b>
-            </div><br>
-            <ul>
+              </div>
+              <ul>
                 <li>Prof. S. G. Dhake</li>
-            </ul>
-            <br>
+              </ul>
+              <br>
 
-            <div class="content-title">
+              <div>
                 <b>Members</b>
-            </div><br>
-            <ul>
+              </div>
+              <ul>
                 <li>077 Sujata Khatale</li>
                 <li>081 Neeraj Adhav</li>
                 <li>088 Prajwal Daware</li>
                 <li>090 Sanket Shivale</li>
                 <li>091 Nikita Argade</li>
                 <li>094 Dixita Pagar</li>
-            </ul>
-            <br>
-
-            <div class="content-title">
-                <b>College</b>
-            </div><br>
-            Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213
-            <br>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">College</h4>
+            <p class="text-white">Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213</p>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="./" class="navbar-brand d-flex align-items-center">
+          <strong>Martian City</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
+  <main>
+
+    <section class="py-5 text-center container-fluid"
+      style="background: url('https://images.unsplash.com/photo-1538551868183-edf7bfc50391') no-repeat; background-size: cover; height: 92vh;">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <img src="./static/images/logo.png" alt="logo" class="img-fluid">
+          <p class="lead text-light">Mars is the next tangible frontier for human exploration, and it is an achievable
+            goal</p>
+        </div>
+      </div>
+    </section>
+    <br id="intro"><br>
+    <section class="container">
+      <h2>Intro</h2>
+      <div>
+        <p>Colonization of Mars: As humans gradually overcome technological challenges of deep space
+          missions, the possibility of exploration and colonization of extraterrestrial outposts is being
+          seriously considered by space agencies and commercial entities alike.</p>
+        <p>Colonization on mars is a very deep topic, we have to take many things under consideration. Let
+          us see the different challenges which we will have to face.</p>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col" id="post1">
+            <div class="card shadow-sm">
+              <img
+                src="http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2018/04/comparing_the_atmospheres_of_mars_and_earth/17444033-1-eng-GB/Comparing_the_atmospheres_of_Mars_and_Earth_pillars.jpg"
+                alt="earth vs mars" class="img-fluid rounded-top">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Difference between Earth and Mars</b><br>
+                  We are planning to migrate to a different planet, but we don't know how the Planet is
+                  different from ours. Let us find out the differences between our lovely planet earth and our
+                  next home Mars.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <small class="text-muted">Sujata Khatale</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" id="post2">
+            <div class="card shadow-sm">
+              <img src="https://mars.nasa.gov/imgs/2017/02/Mars-2020-Final-Three-Landing-Sites-loop_v001_640x360.gif"
+                class="img-fluid rounded-top" alt="mars gif">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Picking a Landing Site</b><br>
+                  Before starting our journey, we should know our destination right! So here are some suitable places on
+                  mars which we can think of landing on.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <small class="text-muted">Neeraj Adhav</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" id="post3">
+            <div class="card shadow-sm">
+              <img
+                src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/journey_to_mars.jpeg"
+                class="img-fluid rounded-top" alt="man">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Travelling to mars</b><br>
+                  Now, as we know where to go, we can plan our travel vehicle and the routes. Here is some
+                  detailed info about the same.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <small class="text-muted">Prajwal Daware</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="post4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1502637098811-fa9526d2b659" class="img-fluid rounded-top"
+                alt="man">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Energy resources</b><br>
+                  Hey, stop! We have to think, how will we operate our space station on the surface of mars?
+                  What energy resource we will use? What will provide our rovers and machinery power? Let us
+                  see one by one.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <small class="text-muted">Dixita Pagar</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" id="post5">
+            <div class="card shadow-sm">
+              <img src="https://cdn.thomasnet.com/insights-images/875ca5b3-7ecc-466c-855b-110b6ce8c53b/750px.png"
+                class="img-fluid rounded-top" alt="man">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Infrastructure and Laboratories</b><br>
+                  Okay, let's assume we are finally on mars. Now, what will be our next step? What are we
+                  going to build? Where will we dwell? where will we carry out our research? What kind of
+                  scientific departments are we going to set up? Read to find out.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <small class="text-muted">Sanket Shivale</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" id="post6">
+            <div class="card shadow-sm">
+              <img src="https://cdn.mos.cms.futurecdn.net/ET4h86HNJS7aHCKHmz3TgB-1200-80.jpg"
+                class="img-fluid rounded-top" alt="man">
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Map of our Martian City</b><br>
+                  We are on Mars, with a team of scientists, engineers and doctors. Now all prerequisites are
+                  fulfilled, let us see how our city will look. Let's jump into it.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <small class="text-muted">Nikita Argade</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- <hr style="background: gray; height: 2px;">
-    <footer class="content">
-        <div class="content-title">
-            copyright
-        </div>
-    </footer> -->
+  </main>
 
-    <br><br><br><br>
-    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#intro">Back to top</a>
+      </p>
+      <p class="mb-1">&copy; Martian City, made by <a href="https://neerajadhav.github.io">Neeraj Adhav</a></p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 
 
 </body>
-
-<script>
-    var wrap = document.getElementById("menuwrap");
-    var menu = document.getElementById("menu");
-
-    function openmenu() {
-        wrap.style.display = "block";
-        menu.style.display = "block";
-        menu.style.animation = "menuanimin 0.5s 1";
-    }
-
-    function closemenu() {
-        menu.style.animation = "menuanimout 0.5s 1";
-        wrap.style.display = "none";
-        menu.style.display = "none";
-    }
-
-    function preloader() {
-        loading = document.getElementById("loading")
-        loading.style.display = 'none';
-    }
-</script>
 
 </html>
