@@ -1,134 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <meta name="viewport" content="width=device-width" />
-
-    <!-- Favicon and title -->
-    <link rel="icon" href="../static/images/mars.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Martian City">
+    <meta name="author" content="Neeraj Adhav">
     <title>Energy Resources</title>
 
-    <!-- Halfmoon CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="canonical" href="https://neerajadhav.github.io">
 
-    <!-- FontAwesomne -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../static/images/mars.png" type="image/x-icon">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../main.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../blog.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <style>
-        .content p{
-            font-size: 20px;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
         }
     </style>
 
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
 </head>
 
-<body onload="preloader()" class="with-custom-webkit-scrollbars with-custom-css-scrollbars"
-    style="background: url('https://images.unsplash.com/photo-1530362502708-d02c8f093039?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80'); background-size: contain; background-color: black;">
-    <div id="loading">
-        <!-- <i class="spinner fa fa-lg fa-sun-o"></i> -->
-    </div>
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Project Based Learning 2021</h4>
+                        <div class="text-white">
+                            <div>
+                            </div><br>
+                            <div>
+                                <b>Instructor</b>
+                            </div>
+                            <ul>
+                                <li>Prof. S. G. Dhake</li>
+                            </ul>
+                            <br>
 
-    <div class="content">
-        <img src="../static/images/logo.png" style="width: 200px;" alt="logo" class="img-fluid">
-    </div>
-
-    <div class="container">
-        <div class="content">
-            <a href="../#1"><button class="btn bg-dark text-danger"><i class="fa fa-arrow-left"></i></button></a>
-        </div>
-        <div class="content">
-            <div class="content-title">
-               <h1>Energy resources</h1>
+                            <div>
+                                <b>Members</b>
+                            </div>
+                            <ul>
+                                <li>077 Sujata Khatale</li>
+                                <li>081 Neeraj Adhav</li>
+                                <li>088 Prajwal Daware</li>
+                                <li>090 Sanket Shivale</li>
+                                <li>091 Nikita Argade</li>
+                                <li>094 Dixita Pagar</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">College</h4>
+                        <p class="text-white">Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213</p>
+                    </div>
+                </div>
             </div>
-            <p>To the date two energy resources utilized for mars mission have been sunlight and radioactive decay. A manned mission or permananat settlement would likely also have to choose between these two.</p>
-            <h2>Useful resources on Mars</h2>
-            <p>Spacecraft exploration of Mars has shown that the essential resources neccessary for a life support are present on the Martian surface. The key life support compounds O<sub>2</sub>, N<sub>2</sub>, H<sub>2</sub>O are available on Mars. The soil could be used as radiation sheilding and could provide many useful industrial and contruction material.</p>
         </div>
-        <br><br>
-    </div>
-    <div onclick="return openmenu()" class="floatingMenuBtn btn bg-dark text-success">
-        <i class="fa fa-info"></i>
-    </div>
-
-    <div onclick="return closemenu()" id="menuwrap" class="menuwrap">
-    </div>
-    <div id="menu" class="right-menu">
-        <div onclick="return closemenu()" class="floatingMenuBtn btn bg-dark text-danger">
-            <i class="fa fa-times"></i>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="../" class="navbar-brand d-flex align-items-center">
+                    <strong>Martian City</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
-        <div class="content">
-            <div class="content-title">
-                <b>Project Based Learning 2021</b>
-            </div><br>
-            <div class="content-title">
-                <b>Instructor</b>
-            </div><br>
-            <ul>
-                <li>Prof. S. G. Dhake</li>
-            </ul>
-            <br>
+    </header>
 
-            <div class="content-title">
-                <b>Members</b>
-            </div><br>
-            <ul>
-                <li>077 Sujata Khatale</li>
-                <li>081 Neeraj Adhav</li>
-                <li>088 Prajwal Daware</li>
-                <li>090 Sanket Shivale</li>
-                <li>091 Nikita Argade</li>
-                <li>094 Dixita Pagar</li>
-            </ul>
-            <br>
+    <main id="main" class="container">
+        <br>
+        <div class="row g-5">
+            <div class="col-md-8">
+                <a href="../#post4">Back</a>
+                <hr>
+                <article class="blog-post">
+                    <h2 class="blog-post-title">Energy Resources</h2>
+                    <p class="blog-post-meta">by Dixita Pagar</p>
 
-            <div class="content-title">
-                <b>College</b>
-            </div><br>
-            Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213
-            <br>
+                    <p>Hey, stop! We have to think, how will we operate our space station on the surface of mars?
+                        What energy resource we will use? What will provide our rovers and machinery power? Let us
+                        see one by one.</p>
+                    <hr>
+                    <p>To the date two energy resources utilized for mars mission have been sunlight and radioactive
+                        decay. A manned mission or permananat settlement would likely also have to choose between these
+                        two.</p>
+
+                    <h4>Useful resources on Mars</h4>
+                    <p>Spacecraft exploration of Mars has shown that the essential resources necessary for life support
+                        are present on the martian surface. The key life-support compounds O2, N2, and H2O are available
+                        on Mars. The soil could be used as radiation shielding and could provide many useful industrial
+                        and construction materials. Compounds with high chemical energy, such as rocket fuels, can be
+                        manufactured in-situ on Mars. Solar power, and possibly wind power, are available and practical
+                        on Mars. Preliminary engineering studies indicate that fairly autonomous processes can be
+                        designed to extract and stockpile Martian consumables. The ability to utilize these materials in
+                        support of a human exploration effort allows missions that are more robust and economical than
+                        would otherwise be possible.</p>
+                    <p>Magnesium, Aluminium, Titanium, Iron, and Chromium are relatively common in them. In addition,
+                        lithium, cobalt, nickel, copper, zinc, niobium, molybdenum, lanthanum, europium, tungsten, and
+                        gold have been found in trace amounts.</p>
+
+                    <h4>Generate electricity on Mars</h4>
+                    <p>Wind turbines designed to make electricity at the South Pole and in remote regions of Alaska may
+                        someday lead to similar wind machines for Mars bases, according to NASA scientists.</p>
+                    <p>During missions to Antarctica, where there are about six months of darkness each year, NASA
+                        scientists first seriously considered modifying cold-weather wind machines so they could make
+                        vital electric power for bases on Mars. One reason scientists proposed use of wind power on Mars
+                        is that wind turbines still could generate electricity during month-long martian global dust
+                        storms that can make days on the red planet as dark as night.</p>
+                    <p>"Wind power and solar power may complement each other on Mars. When you have a large dust storm
+                        blocking the sunlight on Mars, a wind turbine can still generate electricity," said scientist
+                        David Bubenheim of NASA’s Ames Research Center in California’s Silicon Valley.</p>
+                    <p>"Only during dust storms on Mars is there enough wind energy to operate a wind turbine," said
+                        Michael Flynn, another NASA Ames scientist. On Earth about 10 meters (33 feet) per second wind
+                        speed is needed to make electricity with wind turbines; on Mars about 30 meters (98 feet) is
+                        needed because of the extremely thin air, according to Bubenheim.</p>
+
+                    <h4>Does Mars have oxygen?</h4>
+                    <p>Atmospheric gases on Mars sure provide us with plenty of mystery. First, there was that business
+                        with the disappearing, reappearing methane. Now, oxygen levels have been observed rising and
+                        falling over the Gale Crater, by amounts that just don't fit any known chemical processes.</p>
+                    <p>The data comes from Curiosity, the Mars rover that's been making its slow and methodical trek
+                        across the crater floor and up the foot of Mount Sharp in the centre of it.</p>
+                    <p>Mars' atmosphere is dominated by carbon dioxide (CO₂) at a concentration of 96%. Oxygen is only
+                        0.13%, compared with 21% in Earth's atmosphere. Moxie can strip oxygen atoms from CO₂ molecules,
+                        which are made up of one carbon atom and two oxygen atoms.</p>
+
+                    <p>The Mars Oxygen In-Situ Resource Utilization Experiment is a technology demonstration on the NASA
+                        Mars 2020 rover Perseverance investigating the production of oxygen on Mars. On April 20, 2021,
+                        MOXIE produced oxygen from carbon dioxide in the Martian atmosphere by using solid oxide
+                        electrolysis.</p>
+
+                    <h4>Martian Rock and Soil</h4>
+                    <p>The surface of the planet Mars exhibits a world of reddish rock, soil, and dust as
+                        revealed by Mars landers. Such an environment is quite distinct from
+                        the earth except for the desert areas and the big question is whether we can
+                        find or produce soils suitable for agriculture on Mars. If we send astronauts to
+                        Mars, they will have to stay for 18-24 months. </p>
+                    <p>Therefore, considering agriculture is important to living off the land, recycle
+                        air, water, provide food etc as reviewed by Ming and Henninger (1989). In this
+                        chapter we review the information about the chemistry and mineralogy of the
+                        rocks and soils present on the surface of Mars and then discuss available resources
+                        and energy sources that can be utilized to perform Martian agriculture. There is
+                        also discussion of using released methane.</p>
+                    <p>There are mainly two available sources to obtain information about rocks and soils
+                        on Mars. One is from direct analyses of meteorites originating from Mars that were ejected by
+                        heavy impacts that eventually reached the earth. The other is from
+                        data collected by spacecraft exploration of Mars. Both sources have provided
+                        valuable insight into the geochemistry and mineralogy of Mars surface materials. </p>
+
+                    <h4>Nuclear energy</h4>
+                    <p>Nuclear power is an attractive alternative to solar for several reasons. Its power output is
+                        constant in time, meaning less risk of prolonged power shortages that could prove hazardous to a
+                        human crew. It also weighs less per nameplate capacity than does solar when considering a Mars
+                        operating environment - a 2016 NASA study found that about 18,000 kg of solar power generation
+                        equipment would be needed to match the output of a 9000 kg fission system. This was considering
+                        a relatively small system meant to provide 21 kW peak electric power for a handful of
+                        astronauts, which translates to roughly 1.2 watts per kilogram for the solar power system and
+                        2.3 watts per kilogram for the nuclear system.</p>
+                    <p>The nighttime temperature on Mars as measured by the Opportunity rover reach as low as -98°C with
+                        diurnal temperature variations of up to 100°C, so even a temporary power loss in such an
+                        environment could quickly become life-threatening as the heating systems fail. This presents
+                        another advantage of nuclear power: even in the event of an electrical fault, the passive heat
+                        from the reactor or radioisotopes could be used to warm the habitat.</p>
+
+                    <h4>Conclusion</h4>
+                    <p>Though solar is increasingly popular on Earth, its intermittency, especially in the face of
+                        extreme weather events like long-lasting dust storms, makes it is less attractive on Mars.
+                        Considerable storage would be necessary to provide adequate backup power, which would result in
+                        a very heavy system. In contrast, nuclear power could provide both steady electricity and a
+                        constant source of direct heat. Thus, from a reliability perspective, nuclear power appears
+                        better suited to powering a small Mars colony. However, this is not to say that nuclear power is
+                        necessarily the best technology for extraterrestrial planetary outposts - it does introduce a
+                        set of safety and environmental concerns that may necessitate further testing and research to
+                        address.</p>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-light rounded">
+                        <h4>Project Based Learning 2021</h4>
+                        <div>
+                            <div>
+                            </div><br>
+                            <div>
+                                <b>Instructor</b>
+                            </div>
+                            <ul>
+                                <li>Prof. S. G. Dhake</li>
+                            </ul>
+                            <br>
+
+                            <div>
+                                <b>Members</b>
+                            </div>
+                            <ul>
+                                <li>077 Sujata Khatale</li>
+                                <li>081 Neeraj Adhav</li>
+                                <li>088 Prajwal Daware</li>
+                                <li>090 Sanket Shivale</li>
+                                <li>091 Nikita Argade</li>
+                                <li>094 Dixita Pagar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
+    </main>
 
-    <!-- <hr style="background: gray; height: 2px;">
-    <footer class="content">
-        <div class="content-title">
-            copyright
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#main">Back to top</a>
+            </p>
+            <p class="mb-1">&copy; 2021 Martian City, made by <a href="https://neerajadhav.github.io">Neeraj Adhav</a>
+            </p>
         </div>
-    </footer> -->
-
-    <br><br><br><br>
-    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
-
-<script>
-    var wrap = document.getElementById("menuwrap");
-    var menu = document.getElementById("menu");
-
-    function openmenu() {
-        wrap.style.display = "block";
-        menu.style.display = "block";
-        menu.style.animation = "menuanimin 0.5s 1";
-    }
-
-    function closemenu() {
-        menu.style.animation = "menuanimout 0.5s 1";
-        wrap.style.display = "none";
-        menu.style.display = "none";
-    }
-
-    function preloader() {
-        loading = document.getElementById("loading")
-        loading.style.display = 'none';
-    }
-</script>
 
 </html>
