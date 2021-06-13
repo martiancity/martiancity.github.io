@@ -50,7 +50,7 @@
     }
 
     .mars {
-      background: url('./static/images/mars_1k_color.jpg');
+      background: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=813&q=80');
       background-size: cover;
       box-shadow: -20px -20px 50px 20px #000 inset, 0 0 20px 2px #000;
       animation: marsspin 30s linear alternate infinite;
@@ -62,6 +62,15 @@
       bottom: 0;
       margin: auto;
       border-radius: 50%;
+      padding-top: 155px;
+      color: white;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+    .mars h1{
+      font-size: 3rem;
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
     }
   </style>
 
@@ -124,11 +133,13 @@
   <main>
 
     <section class="py-5 text-center container-fluid"
-      style="background: url('https://images.unsplash.com/photo-1599689018034-48e2ead82951?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop') no-repeat; background-size: cover; height: 92vh;">
+      style="background: url('./static/images/mars_1k_color.jpg') no-repeat; background-size: cover; height: 92vh;">
       <div class="row py-lg">
         <div class="col-lg-6 col-md-8 mx-auto">
 
-          <div class="mars"></div><br>
+          <div class="mars">
+            <h1>Martian City</h1>
+          </div><br>
 
           <p class="lead text-light">Mars is the next tangible frontier for human exploration, and it is an achievable
             goal</p>
