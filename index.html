@@ -42,6 +42,27 @@
       background-size: cover;
       z-index: 999;
     }
+
+    @keyframes marsspin {
+      100% {
+        background-position: 100%;
+      }
+    }
+
+    .mars {
+      background: url('./static/images/mars_1k_color.jpg');
+      background-size: cover;
+      box-shadow: -20px -20px 50px 20px #000 inset, 0 0 20px 2px #000;
+      animation: marsspin 30s linear alternate infinite;
+      width: 450px;
+      height: 450px;
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 50%;
+    }
   </style>
 
 
@@ -106,7 +127,9 @@
       style="background: url('https://images.unsplash.com/photo-1599689018034-48e2ead82951?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop') no-repeat; background-size: cover; height: 92vh;">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <img src="./static/images/Untitled design.gif" alt="logo" class="img-fluid rounded-top">
+
+          <div class="mars"></div>
+
           <p class="lead text-light">Mars is the next tangible frontier for human exploration, and it is an achievable
             goal</p>
         </div>
