@@ -32,6 +32,17 @@
                 font-size: 3.5rem;
             }
         }
+
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            background-size: cover;
+            z-index: 999;
+        }
     </style>
 
 
@@ -41,7 +52,9 @@
     <link href="blog.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="preloader()">
+    <div id="loading"></div>
+
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
@@ -125,7 +138,8 @@
                         gold have been found in trace amounts.</p>
 
                     <h4>Generate electricity on Mars</h4>
-                    <img src="https://images.unsplash.com/photo-1522735395567-43c00b2897a7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" alt="windmill" class="img-fluid py-3">
+                    <img src="https://images.unsplash.com/photo-1522735395567-43c00b2897a7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
+                        alt="windmill" class="img-fluid py-3">
                     <p>Wind turbines designed to make electricity at the South Pole and in remote regions of Alaska may
                         someday lead to similar wind machines for Mars bases, according to NASA scientists.</p>
                     <p>During missions to Antarctica, where there are about six months of darkness each year, NASA
@@ -142,7 +156,8 @@
                         needed because of the extremely thin air, according to Bubenheim.</p>
 
                     <h4>Does Mars have oxygen?</h4>
-                    <img src="https://images.unsplash.com/photo-1620418583334-4edb19ffc86e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" alt="o2" class="img-fluid py-3">
+                    <img src="https://images.unsplash.com/photo-1620418583334-4edb19ffc86e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
+                        alt="o2" class="img-fluid py-3">
                     <p>Atmospheric gases on Mars sure provide us with plenty of mystery. First, there was that business
                         with the disappearing, reappearing methane. Now, oxygen levels have been observed rising and
                         falling over the Gale Crater, by amounts that just don't fit any known chemical processes.</p>
@@ -158,7 +173,8 @@
                         electrolysis.</p>
 
                     <h4>Martian Rock and Soil</h4>
-                    <img src="https://images.unsplash.com/photo-1585494870110-1ee96894284a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" alt="rock and soil" class="img-fluid py-3">
+                    <img src="https://images.unsplash.com/photo-1585494870110-1ee96894284a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+                        alt="rock and soil" class="img-fluid py-3">
                     <p>The surface of the planet Mars exhibits a world of reddish rock, soil, and dust as
                         revealed by Mars landers. Such an environment is quite distinct from
                         the earth except for the desert areas and the big question is whether we can
@@ -177,7 +193,8 @@
                         valuable insight into the geochemistry and mineralogy of Mars surface materials. </p>
 
                     <h4>Nuclear energy</h4>
-                    <img src="https://images.unsplash.com/photo-1556834234-f876cf788b3c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" alt="nuclear" class="img-fluid py-3">
+                    <img src="https://images.unsplash.com/photo-1556834234-f876cf788b3c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
+                        alt="nuclear" class="img-fluid py-3">
                     <p>Nuclear power is an attractive alternative to solar for several reasons. Its power output is
                         constant in time, meaning less risk of prolonged power shortages that could prove hazardous to a
                         human crew. It also weighs less per nameplate capacity than does solar when considering a Mars
@@ -253,6 +270,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+
+    <script>
+        function preloader() {
+            loading = document.getElementById("loading")
+            loading.style.display = 'none';
+        }
+    </script>
+
 </body>
 
 </html>

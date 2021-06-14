@@ -31,12 +31,56 @@
         font-size: 3.5rem;
       }
     }
+
+    #loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      background-size: cover;
+      z-index: 999;
+    }
+
+    @keyframes marsspin {
+      100% {
+        background-position: 100%;
+      }
+    }
+
+    .mars {
+      background: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=813&q=80');
+      background-size: cover;
+      box-shadow: -20px -20px 50px 20px #000 inset, 0 0 20px 2px #000;
+      animation: marsspin 30s linear alternate infinite;
+      width: 375px;
+      height: 375px;
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 50%;
+      padding-top: 155px;
+      color: white;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+    .mars h1 {
+      font-size: 3rem;
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif
+        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+      ;
+    }
   </style>
 
 
 </head>
 
-<body>
+<body onload="preloader()">
+  <div id="loading"></div>
 
   <header>
     <div class="collapse bg-dark" id="navbarHeader">
@@ -92,9 +136,13 @@
 
     <section class="py-5 text-center container-fluid"
       style="background: url('static/images/header image.gif') no-repeat; background-size: cover; height: 92vh;">
-      <div class="row py-lg-5">
+      <div class="row py-lg">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <img src="./static/images/Untitled design.gif" alt="logo" class="img-fluid rounded-top">
+
+          <div class="mars">
+            <h1>Martian City</h1>
+          </div><br>
+
           <p class="lead text-light">Mars is the next tangible frontier for human exploration, and it is an achievable
             goal</p>
         </div>
@@ -107,7 +155,8 @@
         <p>Colonization of Mars: As humans gradually overcome technological challenges of deep space
           missions, the possibility of exploration and colonization of extraterrestrial outposts is being
           seriously considered by space agencies and commercial entities alike.</p>
-        <p>Colonization on mars is a very deep topic, we have to take many things under consideration. Let
+        <p><b>Of course, we are not going to see such cities on Mars as we see on Earth or on the hero image of this
+            site.</b> Colonization on mars is a very deep topic, we have to take many things under consideration. Let
           us see the different challenges which we will have to face.</p>
       </div>
     </section>
@@ -130,7 +179,8 @@
                   next home Mars.
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <a href="./Difference-between-Earth-and-Mars/"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <a href="./Difference-between-Earth-and-Mars/"><button type="button"
+                      class="btn btn-sm btn-outline-primary">View</button></a>
                   <small class="text-muted">Sujata Khatale</small>
                 </div>
               </div>
@@ -187,7 +237,8 @@
                   see one by one.
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <a href="./Energy-resources/"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <a href="./Energy-resources/"><button type="button"
+                      class="btn btn-sm btn-outline-primary">View</button></a>
                   <small class="text-muted">Dixita Pagar</small>
                 </div>
               </div>
@@ -195,8 +246,7 @@
           </div>
           <div class="col" id="post5">
             <div class="card shadow-sm">
-              <img src="static/images/giphy[1].gif"
-                class="img-fluid rounded-top" alt="man">
+              <img src="static/images/giphy[1].gif" class="img-fluid rounded-top" alt="man">
 
               <div class="card-body">
                 <p class="card-text">
@@ -214,8 +264,7 @@
           </div>
           <div class="col" id="post6">
             <div class="card shadow-sm">
-              <img src="static/images/MapOfMars.gif"
-                class="img-fluid rounded-top" alt="man">
+              <img src="static/images/MapOfMars.gif" class="img-fluid rounded-top" alt="man">
 
               <div class="card-body">
                 <p class="card-text">
@@ -250,6 +299,12 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 
+  <script>
+    function preloader() {
+      loading = document.getElementById("loading")
+      loading.style.display = 'none';
+    }
+  </script>
 
 </body>
 
