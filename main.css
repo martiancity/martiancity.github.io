@@ -137,4 +137,13 @@ a{
 
 video::-webkit-media-controls {
   display:none !important;
+
+}
+
+hr
+.type_7 {
+border: 0;
+height: 55px;
+background-image: url(image/type_7.png);
+background-repeat: no-repeat;
 }
