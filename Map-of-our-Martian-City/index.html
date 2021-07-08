@@ -1,189 +1,420 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Martian City">
-    <meta name="author" content="Neeraj Adhav">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Martian City" />
+    <meta name="author" content="Neeraj Adhav" />
     <title>Map of our Martian City</title>
 
-    <link rel="canonical" href="https://neerajadhav.github.io">
+    <link rel="canonical" href="https://neerajadhav.github.io" />
 
-    <link rel="shortcut icon" href="../static/images/mars.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../static/images/mars.png"
+      type="image/x-icon"
+    />
 
     <!-- Bootstrap core CSS -->
-    <link href="../blog.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="../blog.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
+      }
 
-        #loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            background-size: cover;
-            z-index: 999;
-        }
+      #loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        background-size: cover;
+        z-index: 999;
+      }
     </style>
 
-
     <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
-</head>
+    <link href="blog.css" rel="stylesheet" />
+  </head>
 
-<body onload="preloader()">
-    <center id="loading" style="padding-top: 300px;">
-        <div class="spinner-border text-primary" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
+  <body onload="preloader()">
+    <center id="loading" style="padding-top: 300px">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
     </center>
 
     <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">Project Based Learning 2021</h4>
-                        <div class="text-white">
-                            <div>
-                            </div><br>
-                            <div>
-                                <b>Instructor</b>
-                            </div>
-                            <ul>
-                                <li>Prof. S. G. Dhake</li>
-                            </ul>
-                            <br>
-
-                            <div>
-                                <b>Members</b>
-                            </div>
-                            <ul>
-                                <li>077 Sujata Khatale</li>
-                                <li>081 Neeraj Adhav</li>
-                                <li>088 Prajwal Daware</li>
-                                <li>090 Sanket Shivale</li>
-                                <li>091 Nikita Argade</li>
-                                <li>094 Dixita Pagar</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">College</h4>
-                        <p class="text-white">Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra 422213</p>
-                    </div>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">Project Based Learning 2021</h4>
+              <div class="text-white">
+                <div></div>
+                <br />
+                <div>
+                  <b>Instructor</b>
                 </div>
+                <ul>
+                  <li>Prof. S. G. Dhake</li>
+                </ul>
+                <br />
+
+                <div>
+                  <b>Members</b>
+                </div>
+                <ul>
+                  <li>077 Sujata Khatale</li>
+                  <li>081 Neeraj Adhav</li>
+                  <li>088 Prajwal Daware</li>
+                  <li>090 Sanket Shivale</li>
+                  <li>091 Nikita Argade</li>
+                  <li>094 Dixita Pagar</li>
+                </ul>
+              </div>
             </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a href="../" class="navbar-brand d-flex align-items-center">
-                    <strong>Martian City</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">College</h4>
+              <p class="text-white">
+                Sandip Foundation (SITRC), Trimbak Road, Nashik, Maharashtra
+                422213
+              </p>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="../" class="navbar-brand d-flex align-items-center">
+            <strong>Martian City</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
     </header>
 
     <main id="main" class="container">
-        <br id="intro">
-        <div class="row g-">
-            <div class="col-md-8">
-                <a href="../#intro"><i class="fa fa-arrow-left"></i></a>
-                <hr>
-                <article class="blog-post">
-                    <h2 class="blog-post-title">Map of our Martian City</h2>
-                    <p class="blog-post-meta">by Nikita Argade
-                    </p>
-                    <div class="sketchfab-embed-wrapper">
-                        <iframe title="Map Of Martiancity" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="500" src="https://sketchfab.com/models/0d311ddce6ed480fa095b5657eb19fd6/embed?ui_theme=dark"> </iframe>
-                        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/map-of-martiancity-0d311ddce6ed480fa095b5657eb19fd6?utm_medium=embed&utm_campaign=share-popup&utm_content=0d311ddce6ed480fa095b5657eb19fd6" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Map Of Martiancity </a> by <a href="https://sketchfab.com/shiva-21?utm_medium=embed&utm_campaign=share-popup&utm_content=0d311ddce6ed480fa095b5657eb19fd6" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Sanket Shivale </a></p>
-                    </div>
-                </article>
-            </div>
+      <br id="intro" />
+      <div class="row g-">
+        <div class="col-md-8">
+          <a href="../#intro"><i class="fa fa-arrow-left"></i></a>
+          <hr />
+          <article class="blog-post">
+            <h2 class="blog-post-title">Map of our Martian City</h2>
+            <p class="blog-post-meta">by Nikita Argade</p>
+            <div class="sketchfab-embed-wrapper">
+              <iframe
+                title="Map Of Martiancity"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="fullscreen; autoplay; vr"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+                width="100%"
+                height="500"
+                src="https://sketchfab.com/models/0d311ddce6ed480fa095b5657eb19fd6/embed?ui_theme=dark"
+              >
+              </iframe>
+              <p
+                style="
+                  font-size: 13px;
+                  font-weight: normal;
+                  margin: 5px;
+                  color: #4a4a4a;
+                "
+              >
+                <a
+                  href="https://sketchfab.com/3d-models/map-of-martiancity-0d311ddce6ed480fa095b5657eb19fd6?utm_medium=embed&utm_campaign=share-popup&utm_content=0d311ddce6ed480fa095b5657eb19fd6"
+                  target="_blank"
+                  style="font-weight: bold; color: #1caad9"
+                >
+                  Map Of Martiancity
+                </a>
+                by
+                <a
+                  href="https://sketchfab.com/shiva-21?utm_medium=embed&utm_campaign=share-popup&utm_content=0d311ddce6ed480fa095b5657eb19fd6"
+                  target="_blank"
+                  style="font-weight: bold; color: #1caad9"
+                >
+                  Sanket Shivale
+                </a>
+              </p>
+              <br />
 
-            <div class="col-md-4">
-                <div class="position-sticky" style="top: 2rem;">
-                    <div class="p-4 mb-3 bg-light rounded">
-                        <h4>Project Based Learning 2021</h4>
-                        <div>
-                            <div>
-                            </div><br>
-                            <div>
-                                <b>Instructor</b>
-                            </div>
-                            <ul>
-                                <li>Prof. S. G. Dhake</li>
-                            </ul>
-                            <br>
+              <p>
+                The Mars Treaty was finally signed at the United Nations in
+                Geneva on December 1st, 2024, two months after the launch of the
+                Starship Heart of Gold, on the first-ever journey to Mars by a
+                private company. The Treaty, signed by member states from every
+                continent, enabled 74 private companies and large and small
+                states to join forces and fund the Mars Consortium, which went
+                on to establish Star City on Mars
+              </p>
 
-                            <div>
-                                <b>Members</b>
-                            </div>
-                            <ul>
-                                <li>077 Sujata Khatale</li>
-                                <li>081 Neeraj Adhav</li>
-                                <li>088 Prajwal Daware</li>
-                                <li>090 Sanket Shivale</li>
-                                <li>091 Nikita Argade</li>
-                                <li>094 Dixita Pagar</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              <h4>The Star City Concept</h4>
+              <p>
+                <b
+                  >“If we want to put humans on Mars, we’ll need humans on
+                  Mars.”
+                </b>
+                Star City exports Hope, Promise and Know-How. The Star City
+                Guild builds new cities on Mars, inspires millions of young
+                people who watch Star City’s blinking lasers from their backyard
+                telescopes and trains leaders who return to Earth to rebuild
+                devastated communities. If humans from all around the world can
+                work together to build cities on Mars, where even the air we
+                breathe must be made in a machine, they can inspire the rest of
+                us to work together to make our Planet Earth a better place for
+                all. The New Space companies are in the transportation business,
+                moving people and equipment between Earth and Mars. The Star
+                City Development Guild (“the Guild”) are the experts who can
+                build anything on Mars, from a small dome to a complete town for
+                thousands of people. With their fleet of mobile nuclear reactors
+                and heavy roadheaders, their extensive industrial base, and
+                above all their know- how and expertise, the Guild earns enough
+                from the Mars construction and outfitting business to pay for
+                the necessary imports of advanced high-tech parts and spares.
+              </p>
+              <p>
+                The Star City University manages exploration and scientific
+                research on Mars, on behalf of sponsors from Earth. It also
+                offers the ultimate leadership training programs, pairs
+                researchers and visitors from Earth on expeditions, and produces
+                art, poetry and Martian musical instruments sold to Earth.
+              </p>
+              <p>
+                The Star City Spaceport is investing in an ever-growing network
+                of refueling nodes at the Sun- Mars Lagrange points, on Phobos
+                and in the asteroid belt. Their strategy is to become the go-to
+                supplier for propellant beyond Earth orbit, opening up deep
+                space to their customers.
+              </p>
+
+              <h4>Building Star City</h4>
+              <p>
+                <b>Site Selection </b> : We have reviewed the USGS maps of Mars
+                NASA’s Human Landing Sites workshops and also its ongoing
+                project for Subsurface Water Ice Mapping (SWIM). In producing a
+                shortlist of regions suitable for Star City, the criteria were:
+                in Northern Hemisphere; low altitude for safer landings;
+                abundance of shallow subsurface water ice deposits; rock quality
+                suitable for tunneling and supporting tunnels; suitable
+                landforms for tunneling inside mesas or crater walls;
+                availability of other critical resources such as metals,
+                silicates, sulfates etc. and proximity to areas of scientific
+                interest and natural beauty. Tunneling in competent rock
+                formations is used for the construction of the majority of the
+                habitable volume. Accordingly, the first landings in the 2024 -
+                2026 timeframe investigate one or more of the candidate sites to
+                validate the geomorphological assumptions and provide data to
+                refine the tunneling concept of operations for the Star City
+                campaign which follows from 2028 - 2042.
+              </p>
+
+              <h4>Subtractive Construction</h4>
+              <p>
+                Habitable volume at Star City is created primarily by
+                subtractive construction. Each of the five founding villages
+                around the crater uses crawler-mounted roadheaders, two 130-ton
+                Sandvik MT720 and two 60-ton MT361’s. These can be operated
+                economically in rock formations with uniaxial compressive
+                strength up to 140 MPa. Each roadheader is all-electric and can
+                be remote-controlled via PLC to create up to 480 m3 of new
+                habitable volume per day. The Guild uses these to construct
+                secure, long-lived tunnels for transportation, storage,
+                residences, aquaponics, industry, services, and pumped hydro
+                storage.
+              </p>
+              <h4>Colony Urban Concept</h4>
+              <p>
+                Star City can be constructed in craters of diameter from 2km -
+                10km. The scheme presented in Fig. 3 below has been fitted to a
+                10km crater located in Utopia Planitia at 40.8N, 99.5E, altitude
+                -4,000 meters [04], but can be adapted for other craters. The
+                site first receives power, ISRU and heavy equipment in the 2029
+                window. In November 2031, two Starships by SpaceX with 30
+                passengers each land near the site. Each of the two Starships
+                carries five teams of six persons, one from each of the five
+                continental groupings. Thus, there are 12 founders of the “red”
+                sector 1 village in Figure 3 below, 12 founders of the “blue”
+                sector 2 village, and so on. In all, the first 60 persons on
+                Mars start five villages simultaneously. Between 2031 and 2042,
+                more people and equipment arrive and the villages continue to
+                expand their habitable volume perimetrically along the crater
+                wall, until they merge to form Star City. All tunnel tailings
+                are mined for water ice and useful resources such as metals and
+                silicates, while the north-facing inside wall of the crater is
+                reserved for supplemental water ice mining.
+              </p>
+              <p>
+                Urban plan of Star City. Each of the five founding villages
+                grows perimetrically along the crater wall. The villages are
+                connected by transportation and services tunnels so they can
+                share people and resources and come to each other’s aid. As Star
+                City grows, the five villages merge into a city with five
+                culturally distinct neighborhoods. At some point, once they can
+                afford it, they pool their resources to build facilities for
+                arts, culture, school, a university and a hospital at the center
+                of the crater.
+              </p>
+              <p>
+                Cross sectional view b-b. The five villages have panoramic views
+                of each other across the crater, and of the Martian horizon.
+                Each village is self-sufficient, with its own power generation
+                and backup power system, and its own aquaponics and industrial
+                zones. Each of the five villages is tackling the same survival
+                challenges in their own way, and in a contingency or emergency,
+                each can rely on help from the other four.
+              </p>
+              <p>
+                Cross sectional view a-a. The residential tunnels and domes are
+                located along the top of the crater wall, with panoramic views
+                from the domes to the other four villages or to the distant
+                horizon. Rover access is at ground level of the surrounding
+                plains, with unpressurized rover garages situated directly below
+                the agro-industrial tunnels.
+              </p>
+              <h4>Energy-rich colony</h4>
+              <p>
+                An integrated power grid stepped down to 1000V, 240V and 110V AC
+                is supplied by the three 95MWe IMSR load-following nuclear
+                reactors by Terrestrial Energy, which operate at a useful 700C
+                providing high quality process heat for industry, and are
+                walk-away safe in the event of an accident. All cooling takes
+                place in the molten salt loop, with a secondary salt circuit
+                transferring heat to the water loop and driving the steam
+                turbine. The lifetime is 7 years, after which the core must be
+                replaced. Each of the three IMSR reactors can carry the entire
+                load if required. Exploiting the height differences, five pumped
+                hydro systems holding ~22,000 tons of water each are installed
+                in the mid 2030’s, providing up to 30 minutes of backup @ 20MWe.
+                Five additional MegaPower 2MWe reactors [07] serve for ISRU
+                propellant and also as redundant emergency backup for the five
+                villages.
+              </p>
+              <h4>The Economy of Star City</h4>
+              <p>
+                Overview of Economic Concept The central economic motivation for
+                the consortium of investors is to establish Star City
+                Development Guild as the lowest cost provider for construction
+                of habitable outposts on Mars and to thereby reap an economic
+                benefit by selling the establishment of other outposts to
+                second-movers. This space is already being actively monitored,
+                as evidenced by the space interests of decidedly non-space
+                companies like Caterpillar, Obayashi and Kajima and of
+                professional firms like Foster + Partners and SOM. This would
+                not normally be a viable business model, except that a new space
+                race is under way. Major powers and/or well-funded private
+                corporations have clearly and repeatedly declared their intent
+                to return humans to other worlds and to create permanent
+                settlements there.
+              </p>
             </div>
+          </article>
         </div>
 
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4>Project Based Learning 2021</h4>
+              <div>
+                <div></div>
+                <br />
+                <div>
+                  <b>Instructor</b>
+                </div>
+                <ul>
+                  <li>Prof. S. G. Dhake</li>
+                </ul>
+                <br />
+
+                <div>
+                  <b>Members</b>
+                </div>
+                <ul>
+                  <li>077 Sujata Khatale</li>
+                  <li>081 Neeraj Adhav</li>
+                  <li>088 Prajwal Daware</li>
+                  <li>090 Sanket Shivale</li>
+                  <li>091 Nikita Argade</li>
+                  <li>094 Dixita Pagar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="text-muted py-5">
-        <div class="container">
-            <p class="float-end mb-1">
-                <a href="#intro">Back to top</a>
-            </p>
-            <p class="mb-1">&copy; 2021 <a href="https://github.com/martiancity/martiancity.github.io">Martian City</a>
-            </p>
-        </div>
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#intro">Back to top</a>
+        </p>
+        <p class="mb-1">
+          &copy; 2021
+          <a href="https://github.com/martiancity/martiancity.github.io"
+            >Martian City</a
+          >
+        </p>
+      </div>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
-        function preloader() {
-            loading = document.getElementById("loading")
-            loading.style.display = 'none';
-        }
+      function preloader() {
+        loading = document.getElementById("loading");
+        loading.style.display = "none";
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
